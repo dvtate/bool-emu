@@ -1,4 +1,4 @@
-module Data (Byte bit Word byte) where
+module Words (Byte bit Word byte readInt) where
 
 import Prelude
 import Data.Bits
@@ -24,7 +24,6 @@ bit (Byte _ _ _ b _ _ _ _) 4 = b
 bit (Byte _ _ b _ _ _ _ _) 5 = b
 bit (Byte _ b _ _ _ _ _ _) 6 = b
 bit (Byte b _ _ _ _ _ _ _) 7 = b
-
 
 
 -- 32 Bit words (4 bytes)
