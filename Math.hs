@@ -1,9 +1,7 @@
 module Math (add) where
 
-import Data
+import Words
 
--- Sum with a carry bit
-data Sum a = Sum a Bool
 
 -- Half adder
 halfAdd :: Bool -> Bool -> Sum Bool
@@ -13,6 +11,9 @@ halfAdd a b = Sum (a /= b) (a && b)
 fullAdd :: Bool -> Bool -> Bool -> Sum Bool
 fullAdd c a b = let partSum = a /= b
     in Sum (partSum /= c) ((partSum && c) || (a && b))
+
+-- Sum with a carry bit
+data Sum a = Sum a Bool
 
 add c (Byte a7 a6 a5 a4 a3 a2 a1 a0) (Byte b7 b6 b5 b4 b3 b2 b1 b0) = let
     Sum s0 c0 = fullAdd c a0 b0
