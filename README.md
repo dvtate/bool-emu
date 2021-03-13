@@ -1,0 +1,2 @@
+# Boolean Processor
+Here's a really silly project that's overcomplicated and more of a way for me to get more comfortable Haskell and digital circuitry at the same time. For your own sake don't look at the code only putting it here for version control.
