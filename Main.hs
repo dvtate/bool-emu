@@ -1,5 +1,5 @@
-import Words
-import Math
+import qualified Words
+import qualified Math
 import Prelude
 import IO
 
@@ -10,4 +10,4 @@ main = do
     a <- getLine
     putStrLn "enter a number"
     b <- getLine
-    (putStrLn . show . add) (read a)::Word (read b)::Word
+    (putStrLn . show . Math.add) (read a)::Words.Word (read b)::Words.Word

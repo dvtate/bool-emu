@@ -1,6 +1,6 @@
 module Words (Byte(Byte),Word(Word), bit) where
 
-import Prelude
+import Prelude hiding (Word)
 import Data.Bits
 
 -- Byte is 8 Bits
