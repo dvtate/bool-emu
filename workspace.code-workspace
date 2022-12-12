@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../corki"
+		},
+		{
+			"path": "../postfix-cps"
+		},
+		{
+			"path": "../cs"
+		},
+		{
+			"path": "../planning"
+		}
+	]
+}

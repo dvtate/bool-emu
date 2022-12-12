@@ -39,12 +39,9 @@ instance Register Word where
         | ind < 32  = getBit b3 (mod ind 8)
         | otherwise = error "invalid index"
 
-
 --------
 -- Reading
 --------
-
-
 readIntByte :: Int -> Byte
 readIntByte n = Byte (bit 7) (bit 6) (bit 5) (bit 4) (bit 3) (bit 2) (bit 1) (bit 0)
     where bit i = (n .&. (shiftL 1 i)) /= 0

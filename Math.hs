@@ -18,8 +18,6 @@ fullAdd c a b = let partSum = Logic.xor a b
     in Sum (Logic.xor partSum c) (Logic.or (Logic.and partSum c) (Logic.and a b))
 
 
-
---
 class Addable a where
     add :: Bool -> a -> a -> Sum a
 
